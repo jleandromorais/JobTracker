@@ -1,0 +1,120 @@
+/* Pg.module.css */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.observationsField {
+  grid-column: span 2;
+}
+
+.formActions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.label {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.95rem;
+}
+
+.input, .select, .textarea {
+  padding: 0.85rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+  background-color: #fff;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.button {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.saveButton {
+  background-color: #27ae60;
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #219955;
+}
+
+.cancelButton {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.cancelButton:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  
+  .observationsField,
+  .formActions {
+    grid-column: span 1;
+  }
+  
+  .container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
