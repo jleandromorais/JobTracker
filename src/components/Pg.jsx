@@ -154,6 +154,7 @@ const JobApplicationForm = ({ initialData, onSave, onCancel }) => {
           <select id="platform" name="platform" value={formData.platform} onChange={handleChange} className={styles.select} required>
             <option value="">Selecione...</option>
             <option value="LinkedIn">LinkedIn</option>
+            <option value="Gupy">Gupy</option>
             <option value="Indeed">Indeed</option>
             <option value="Glassdoor">Glassdoor</option>
             <option value="Vagas.com">Vagas.com</option>
